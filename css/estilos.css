@@ -25,7 +25,9 @@ body{
   color: #fff;
 }
 
-
+#header:hover{
+  height: 100px;
+}
 
 #header .logo{
   padding: 0 50px;
@@ -83,6 +85,17 @@ body{
 
 
 
+@keyframes anima{
+  0%{
+    background-position: 5% 0%;
+  }
+  50%{
+    background-position: 96% 100%;
+  }
+  100%{
+    background-position: 5% 0%;
+  }
+}
 
 .uno{
   grid-area: uno;
@@ -90,6 +103,9 @@ body{
   margin-left: 50px;
   margin-bottom: 50px;
   color: #fff;
+  animation: anima 42s linear infinite; 
+  background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);
+  background-size: 1000% 1000%;
 }
 
 .dos{
