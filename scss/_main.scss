@@ -1,0 +1,128 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 20px;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: $bgColor;
+}
+.contenido {
+  padding-top: 50px;
+}
+#banner {
+    background-image: url('../imagenes/background.jpg');
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    height: 110vh;
+    position: relative;
+    z-index: 2;
+    @media all and (max-width: $point-md){
+    	background-image: url('../imagenes/background2.jpg');
+    	background-repeat: no-repeat;
+    	background-position: center;
+    	background-color: $bgColorMobile;
+    	min-height: 400px;
+    	height: 100vh;
+    	position: relative;
+    }
+}
+
+@media all and (max-width: $point-md){
+ #pantalla_principal {
+    @include bgMobile;
+    color: black;
+    font-size: 14px;
+  }
+
+  #galeria{
+    @include bgMobile;
+  }
+
+  #premios{
+    @include bgMobile;
+  }
+
+  #musica{
+    @include bgMobile;
+  }
+  #contacto{
+    @include bgMobile;
+  }
+}
+
+.obj_flex {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+  iframe {
+  	position: absolute;
+  	top: 0;
+ 	  left: 0;
+  	bottom: 0;
+  	right: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+}
+
+.title{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  top: 200px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#main .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+
+.bg-dark{
+    background-color: #000 !important;
+}
+
+.body_style {
+  background-color: $bgColor;
+  color: white;
+  font-size: 14px; }
+
+/*----- CONTACTO -----*/
+
+#contacto{
+    height: 100%;
+    background-color: $bgColor;
+  }
+
+.contact_main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  .contacto_text {
+  	width: 60%;
+  	margin: 20px;
+  }
+  .contact_form {
+    width: 40%;
+    padding: 20px;
+  }
+}
+
+/*----- FOOTER -----*/
+.footer_style {
+  background-color: #000;
+  color: white;
+  font-size: 10px;
+  a {
+  	margin: 2%;
+  }
+}
