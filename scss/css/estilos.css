@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-color: #8ed1d9;
+}
+
+.contenido {
+  padding-top: 50px;
+}
+
+/*----- Banner del Home -----*/
+#banner {
+  background-image: url("../imagenes/background.jpg");
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 400px;
+  height: 110vh;
+  position: relative;
+  z-index: 2;
+}
+
+@media all and (max-width: 980px) {
+  #banner {
+    background-image: url("../imagenes/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #9394c2;
+    min-height: 400px;
+    height: 100vh;
+    position: relative;
+  }
+}
+
+/*----- PPREMIOS -----*/
+#premios {
+  height: 120vh;
+  background-color: #8ed1d9;
+}
+
+/*----- CONTACTO -----*/
+#contacto {
+  height: 110vh;
+  background-color: #8ed1d9;
+}
+
+.contenedorFormulario form {
+  margin: 20px;
+  background-color: #8ed1d9;
+}
+
+@media all and (max-width: 980px) {
+  .contenedorFormulario form {
+    background-color: #9394c2;
+  }
+}
+
+.contenedorFormulario form label {
+  font-size: 1.5em;
+}
+
+.contenedorFormulario form textarea {
+  resize: none;
+  height: 150px;
+}
+
+@media all and (max-width: 980px) {
+  #pantalla_principal {
+    height: 100%;
+    background-color: #9394c2;
+    color: black;
+    font-size: 14px;
+  }
+  #galeria {
+    height: 100%;
+    background-color: #9394c2;
+  }
+  #premios {
+    height: 100%;
+    background-color: #9394c2;
+  }
+  #musica {
+    height: 100%;
+    background-color: #9394c2;
+  }
+  #contacto {
+    height: 100%;
+    background-color: #9394c2;
+  }
+}
+
+.obj_flex {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.obj_flex iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  top: 200px;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+#main .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+.bg-dark {
+  background-color: #000 !important;
+}
+
+.body_style {
+  background-color: #8ed1d9;
+  color: white;
+  font-size: 14px;
+}
+
+/*----- FOOTER -----*/
+.footer_style {
+  background-color: #000;
+  color: white;
+  font-size: 10px;
+}
+
+.footer_style a {
+  margin: 2%;
+}
