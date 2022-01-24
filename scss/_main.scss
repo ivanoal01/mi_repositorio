@@ -15,6 +15,8 @@ body{
 .contenido {
   padding-top: 50px;
 }
+
+/*----- Banner del Home -----*/
 #banner {
     background-image: url('../imagenes/background.jpg');
     object-fit: contain;
@@ -34,6 +36,37 @@ body{
     	position: relative;
     }
 }
+
+/*----- PPREMIOS -----*/
+#premios{
+  height: 80vh;
+  background-color: $bgColor;
+}
+
+/*----- CONTACTO -----*/
+
+#contacto{
+    height: 80vh;
+    background-color: $bgColor;
+  }
+
+.contenedorFormulario {
+    form{
+      margin: 20px;
+      background-color: $bgColor;
+      @media all and (max-width: $point-md){
+        background-color: $bgColorMobile
+      }
+      label{
+        font-size: 1.5em;
+      }
+      textarea{
+          resize: none;
+          height: 150px;
+      }  
+    }
+  }
+
 
 @media all and (max-width: $point-md){
  #pantalla_principal {
@@ -96,26 +129,6 @@ body{
   color: white;
   font-size: 14px; }
 
-/*----- CONTACTO -----*/
-
-#contacto{
-    height: 100%;
-    background-color: $bgColor;
-  }
-
-.contact_main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  .contacto_text {
-  	width: 60%;
-  	margin: 20px;
-  }
-  .contact_form {
-    width: 40%;
-    padding: 20px;
-  }
-}
 
 /*----- FOOTER -----*/
 .footer_style {

@@ -12,13 +12,14 @@ p {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  background-color: #007eb3;
+  background-color: #8ed1d9;
 }
 
 .contenido {
   padding-top: 50px;
 }
 
+/*----- Banner del Home -----*/
 #banner {
   background-image: url("../imagenes/background.jpg");
   object-fit: contain;
@@ -35,35 +36,67 @@ body {
     background-image: url("../imagenes/background2.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #7e70ab;
+    background-color: #9394c2;
     min-height: 400px;
     height: 100vh;
     position: relative;
   }
 }
 
+/*----- PPREMIOS -----*/
+#premios {
+  height: 80vh;
+  background-color: #8ed1d9;
+}
+
+/*----- CONTACTO -----*/
+#contacto {
+  height: 80vh;
+  background-color: #8ed1d9;
+}
+
+.contenedorFormulario form {
+  margin: 20px;
+  background-color: #8ed1d9;
+}
+
+@media all and (max-width: 980px) {
+  .contenedorFormulario form {
+    background-color: #9394c2;
+  }
+}
+
+.contenedorFormulario form label {
+  font-size: 1.5em;
+}
+
+.contenedorFormulario form textarea {
+  resize: none;
+  height: 150px;
+}
+
 @media all and (max-width: 980px) {
   #pantalla_principal {
     height: 100%;
-    background-color: #7e70ab;
+    background-color: #9394c2;
     color: black;
     font-size: 14px;
   }
   #galeria {
     height: 100%;
-    background-color: #7e70ab;
+    background-color: #9394c2;
   }
   #premios {
     height: 100%;
-    background-color: #7e70ab;
+    background-color: #9394c2;
   }
   #musica {
     height: 100%;
-    background-color: #7e70ab;
+    background-color: #9394c2;
   }
   #contacto {
     height: 100%;
-    background-color: #7e70ab;
+    background-color: #9394c2;
   }
 }
 
@@ -102,31 +135,9 @@ body {
 }
 
 .body_style {
-  background-color: #007eb3;
+  background-color: #8ed1d9;
   color: white;
   font-size: 14px;
-}
-
-/*----- CONTACTO -----*/
-#contacto {
-  height: 100%;
-  background-color: #007eb3;
-}
-
-.contact_main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.contact_main .contacto_text {
-  width: 60%;
-  margin: 20px;
-}
-
-.contact_main .contact_form {
-  width: 40%;
-  padding: 20px;
 }
 
 /*----- FOOTER -----*/
